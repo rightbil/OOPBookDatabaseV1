@@ -20,26 +20,11 @@ public class BookApplication {
         BookDB b5 = new BookDB("Temesgen", "Database", "a nice book");
         library.add(b5);
 
-        for (int i = 0; i < 5; i++) { // 5 books
-            System.out.println("Enter book title?");
-            String currentBook = sc.next();
-            boolean isfound = false;
-            for (int j = 0; j < library.size(); j++) { // search in the library
-
-                if (library.get(j).getTitle().equalsIgnoreCase(currentBook)) {
-                    booksPrice = booksPrice + 20;
-                    count++;
-                    isfound = true;
-                    break;
-                }
-            }// inner loop
-            if (!isfound) {
-                System.out.println("Book is not avaliable");
-            } else {
-                System.out.println("book price :" + booksPrice);
-            }
-        }// end of loop
-        System.out.println(count + " books requested and the total price :" + booksPrice);
+        System.out.println("Book Details:\nAuthor \tTitle\t Description");
+        System.out.println("---------------------------------");
+        for (int j = 0; j < library.size(); j++) { // search in the library
+            System.out.println(library.get(j).getDistplayText());
+        }
     }
 
 }

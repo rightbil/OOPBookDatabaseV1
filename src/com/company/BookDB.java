@@ -46,9 +46,8 @@ public class BookDB {
 
     public String getDistplayText() {
 
-        System.out.println("Author: " + author +
-                " Title: " + title +
-                " Descriptions: " + description);
+        return  author + "\t" + title +
+                " \t" + description;
     }
 
 
