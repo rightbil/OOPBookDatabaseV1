@@ -6,18 +6,18 @@ import java.util.Scanner;
 public class BookApplication {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ArrayList<Book> library = new ArrayList<>();
+        ArrayList<BookDB> library = new ArrayList<>();
         double booksPrice = 0.0;
         int count = 0;
-        Book b1 = new Book("Alex", "Java", "a nice book");
+        BookDB b1 = new BookDB("Alex", "Java", "a nice book");
         library.add(b1);
-        Book b2 = new Book("James", "Html", "a nice book");
+        BookDB b2 = new BookDB("James", "Html", "a nice book");
         library.add(b2);
-        Book b3 = new Book("Nora", "Spring", "a nice book");
+        BookDB b3 = new BookDB("Nora", "Spring", "a nice book");
         library.add(b3);
-        Book b4 = new Book("Bili", "Script", "a nice book");
+        BookDB b4 = new BookDB("Bili", "Script", "a nice book");
         library.add(b4);
-        Book b5 = new Book("Temesgen", "Database", "a nice book");
+        BookDB b5 = new BookDB("Temesgen", "Database", "a nice book");
         library.add(b5);
 
         for (int i = 0; i < 5; i++) { // 5 books

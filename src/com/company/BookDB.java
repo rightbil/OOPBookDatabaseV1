@@ -2,19 +2,23 @@ package com.company;
 
 import java.text.NumberFormat;
 
-public class Book {
+public class BookDB {
+    private int SKU;
     private String author;
     private String title;
     private String description;
 
 
-    public Book(String author, String title, String description) {
+    public BookDB(String author, String title, String description) {
         this.author = author;
         this.title = title;
         this.description = description;
 
     }
+    // a method
 
+    public BookDB() {
+    }
 
     public String getAuthor() {
         return author;
@@ -40,7 +44,7 @@ public class Book {
         this.description = description;
     }
 
-    public void getDistplayText() {
+    public String getDistplayText() {
 
         System.out.println("Author: " + author +
                 " Title: " + title +
