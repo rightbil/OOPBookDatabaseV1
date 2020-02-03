@@ -44,7 +44,7 @@ public class Book {
     public void getDistplayText() {
 
         System.out.println("Author: " + author +
-                           "Title: " + title +
-                            "Descriptions: " + description);
+                " Title: " + title +
+                " Descriptions: " + description);
     }
 }
