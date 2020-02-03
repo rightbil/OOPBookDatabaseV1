@@ -1,20 +1,18 @@
 package com.company;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-import org.w3c.dom.ls.LSOutput;
+import java.text.NumberFormat;
 
 public class Book {
     private String author;
     private String title;
     private String description;
 
+
     public Book(String author, String title, String description) {
         this.author = author;
         this.title = title;
         this.description = description;
-    }
 
-    public Book() {
     }
 
     public String getAuthor() {
@@ -47,4 +45,6 @@ public class Book {
                 " Title: " + title +
                 " Descriptions: " + description);
     }
+
+
 }
